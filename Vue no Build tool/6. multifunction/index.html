@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VueJS Course</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+        <p>{{ fullName()}}</p>
+        <p>{{ age }}</p>
+
+
+        <hr>
+
+        <label>firstName</label>  
+        <input type="text" :value="firstName">
+        <label>Lastname</label>
+         <input type="text" :value="lastName" @input="updateLastName">
+         <button @click="increment"> + </button>
+        <button v-on:click="age--"> - </button>
+    </div>
+
+
+    
+   
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VueJS Course</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+        <p>{{ fullName()}}</p>
+        <p>{{ raw_url }}</p>
+
+        <!-- html injecttion code -->
+        <p v-html="raw_url"></p>
+
+
+        <hr>
+
+        <label>firstName</label>  
+        <input type="text" v-model="firstName">
+        <label>Lastname</label>
+         <input type="text" v-model="lastName">
+    </div>
+
+
+    
+   
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VueJS Course</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+        <p>{{ fullName()}}</p>
+        <!-- using v bind to give the dynamic attributes -->
+        <a v-bind:href="url"  target="_blank">Google</a><br>
+        <!-- or short hand-->
+        <a :href="url"  target="_blank">Google</a><br>
+        <hr>
+
+        <label>firstName</label>  <input type="text" v-model="firstName">
+        <label>Lastname</label> <input type="text" v-model="lastName">
+    </div>
+
+
+    
+   
+    <script src="app.js"></script>
+  </body>
+</html>
